@@ -1,12 +1,11 @@
 // src/ViewProjects.js
-import React, { useEffect, useState } from 'react';
-import { supabase } from './supabaseClient'; // Ensure you have your Supabase setup
+import React, { useState, useEffect } from 'react';
+import { supabase } from './supabaseClient';  // Ensure Supabase client is correctly set up
 
 function ViewProjects() {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    // Fetch projects from Supabase
     async function fetchProjects() {
       const { data, error } = await supabase.from('projects').select('*');
       if (error) {
