@@ -1,24 +1,25 @@
+// src/App.js
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import HomePage from './HomePage';  // Ensure this is correctly imported
-import AddProject from './AddProject';  // Ensure AddProject is imported
-import ViewProjects from './ViewProjects';  // Ensure ViewProjects is imported
-import SupplierPage from './SupplierPage';  // Ensure SupplierPage is imported
+import HomePage from './HomePage';  // Ensure HomePage component is correctly imported
+import AddProject from './AddProject';  // Ensure AddProject component is correctly imported
+import ViewProjects from './ViewProjects';  // Ensure ViewProjects component is correctly imported
+import SupplierPage from './SupplierPage';  // Ensure SupplierPage component is correctly imported
 
 function App() {
   return (
     <Router>
       <Switch>
-        {/* Route for HomePage */}
+        {/* Home Page route */}
         <Route exact path="/" component={HomePage} />
         
-        {/* Route for adding a new project */}
+        {/* Add Project route */}
         <Route path="/add-project" component={AddProject} />
         
-        {/* Route for viewing all projects */}
+        {/* View Projects route */}
         <Route path="/projects" component={ViewProjects} />
         
-        {/* Route for SupplierPage */}
+        {/* Supplier Page route */}
         <Route path="/suppliers" component={SupplierPage} />
       </Switch>
     </Router>
