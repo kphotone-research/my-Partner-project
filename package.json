@@ -1,0 +1,12 @@
+{
+  "name": "kphotone-partner-project",
+  "version": "1.0.0",
+  "description": "Kphotone Partner Redirect System",
+  "type": "module",
+  "scripts": {
+    "start": "node api/redirect.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.39.3"
+  }
+}
