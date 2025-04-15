@@ -9,9 +9,16 @@ function App() {
   return (
     <Router>
       <Switch>
+        {/* Route for HomePage */}
         <Route exact path="/" component={HomePage} />
+        
+        {/* Route for adding a new project */}
         <Route path="/add-project" component={AddProject} />
-        <Route path="/projects" component={ViewProjects} />  {/* Route for viewing all projects */}
+        
+        {/* Route for viewing all projects */}
+        <Route path="/projects" component={ViewProjects} />
+        
+        {/* Route for SupplierPage */}
         <Route path="/suppliers" component={SupplierPage} />
       </Switch>
     </Router>
