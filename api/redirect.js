@@ -3,8 +3,8 @@ import { createClient } from '@supabase/supabase-js';
 
 // Initialize Supabase client
 const supabase = createClient(
-  'https://your-project-url.supabase.co',  // Replace with your Supabase project URL
-  'your-public-anon-key'                   // Replace with your Supabase public API key
+  'https://your-project-url.supabase.co',  // https://qbezfrqsojypxpmyblbc.supabase.co
+  'your-public-anon-key'                   //eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFiZXpmcnFzb2p5cHhwbXlibGJjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDQwMjIxNDgsImV4cCI6MjA1OTU5ODE0OH0.FwfbMTlfPQ17OpoMXR3zDL13lwHwm3QlblV5dmHfEVcy
 );
 
 export default async function handler(req, res) {
